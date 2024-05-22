@@ -1,5 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
-import { SideBar } from "./";
+import { SideBar, Videos } from "./";
 
 const Feed = () => (
   <>
@@ -24,6 +24,16 @@ const Feed = () => (
       </Box>
 
       {/* main */}
+      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
+        <Typography
+          variant="h4"
+          sx={{ color: "white", fontWeight: "bold", mb: 2 }}
+        >
+          New&nbsp;<span style={{ color: "#F31503" }}>videos</span>
+        </Typography>
+
+        <Videos videos={[]} />
+      </Box>
     </Stack>
   </>
 );
