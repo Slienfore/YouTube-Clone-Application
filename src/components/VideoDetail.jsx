@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import ReactPlayer from "react-player";
-import { Typography, Box, Stack } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
-import { Videos, Loader } from "./";
+import { Box, Stack, Typography } from "@mui/material";
+import { useEffect, useState } from "react";
+import ReactPlayer from "react-player";
+import { Link, useParams } from "react-router-dom";
 import { $fetch } from "../utils/fetchFromAPI";
+import { Videos } from "./";
 
 const VideoDetail = () => {
   const { id } = useParams();
